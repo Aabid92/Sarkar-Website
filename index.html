@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rabbani Peer – A sacred digital space dedicated to Sufism, spiritual wisdom, and the teachings of Islamic mysticism." />
+  <meta name="keywords" content="Sufism, Rabbani Peer, Tasawwuf, Islamic mysticism, Sufi, spiritual, Qadariya, Chistiya" />
+  <meta property="og:title" content="Rabbani Peer – The Path of Divine Light" />
+  <meta property="og:description" content="Discover the teachings of Sufism, Tasawwuf, and spiritual wisdom." />
+  <title>Rabbani Peer – The Path of Divine Light</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Scheherazade+New:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header id="site-header">
+  <div class="header-inner">
+    <div class="logo-wrap">
+      <div class="logo-emblem">☽</div>
+      <div class="logo-text">
+        <span class="logo-title">Rabbani Peer</span>
+        <span class="logo-sub">The Path of Divine Light</span>
+      </div>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="main-nav">
+      <ul class="nav-list">
+        <li><a href="#" class="nav-link" onclick="showPage('home')">Home</a></li>
+        <li class="has-sub">
+          
+          <a href="#" class="nav-link" onclick="return false;">Sufism <span class="arrow">▾</span></a>
+          <ul class="sub-menu">
+            <li><a href="#" onclick="showPage('about-us')">About Us</a></li>
+            <li><a href="#" onclick="showPage('tasawwuf')">Tasawwuf</a></li>
+            <li><a href="#" onclick="showPage('golden-words')">Golden Words</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#" class="nav-link" onclick="showPage('khalifas')">Khalifas</a></li>
+        <li><a href="#" class="nav-link" onclick="showPage('dawat-e-fikr')">Dawat e Fikr</a></li>
+        <li><a href="#" class="nav-link" onclick="showPage('bait')">Bait</a></li>
+        <li><a href="#" class="nav-link" onclick="showPage('do-you-know')">Do You Know</a></li>
+
+        <li class="has-sub">
+          <a href="#" class="nav-link" onclick="return false;">Photos <span class="arrow">▾</span></a>
+          <ul class="sub-menu">
+            <li><a href="#" onclick="showPage('photos-fehmi')">Fehmi Peer</a></li>
+            <li><a href="#" onclick="showPage('photos-maroof')">Maroof Peer</a></li>
+            <li><a href="#" onclick="showPage('photos-rabbani')">Rabbani Peer</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#" class="nav-link" onclick="showPage('video')">Video</a></li>
+
+        <li class="has-sub">
+          <a href="#" class="nav-link" onclick="return false;">E-Books <span class="arrow">▾</span></a>
+          <ul class="sub-menu">
+            <li><a href="#" onclick="showPage('ebooks-urdu')">Urdu</a></li>
+            <li><a href="#" onclick="showPage('ebooks-hindi')">Hindi</a></li>
+          </ul>
+        </li>
+
+        <li class="has-sub">
+          <a href="#" class="nav-link" onclick="return false;">Shajra <span class="arrow">▾</span></a>
+          <ul class="sub-menu">
+            <li><a href="#" onclick="showPage('shajra-qadariya')">Qadariya</a></li>
+            <li><a href="#" onclick="showPage('shajra-chistiya')">Chistiya</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#" class="nav-link" onclick="showPage('contact')">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== PAGES CONTAINER ===== -->
+<main id="pages-wrap">
+
+  <!-- ═══════════════════════════════════════
+       HOME – REDESIGNED LANDING PAGE
+  ═══════════════════════════════════════ -->
+  <section id="page-home" class="page active">
+
+    <!-- ── SECTION 1 : IMAGE CAROUSEL  +  GOLDEN WORDS + CLOCK ── -->
+    <div class="home-hero-section">
+
+      <!-- LEFT : Image Carousel -->
+      <div class="hero-carousel-wrap">
+        <div class="hero-carousel" id="heroCarousel">
+
+        <div class="hc-slide active">
+          <div class="hc-img-ph" style="background-image: url('murid-banna.png');">
+            <div class="hc-caption">In the Name of Allah, the Most Gracious</div>
+          </div>
+        </div>
+
+          <div class="hc-slide">
+          <div class="hc-img-ph" style="background-image: url('slide2.jpg');">
+            <div class="hc-caption">The Path of Tasawwuf Illuminated</div>
+          </div>
+        </div>
+
+        <div class="hc-slide">
+          <div class="hc-img-ph" style="background-image: url('slide3.jpg');">
+            <div class="hc-caption">Where the Hearts Find Peace</div>
+          </div>
+        </div>
+
+        <div class="hc-slide">
+          <div class="hc-img-ph" style="background-image: url('slide4.jpg');">
+            <div class="hc-caption">Remembrance — The Nourishment of the Soul</div>
+          </div>
+        </div>
+
+        <div class="hc-slide">
+          <div class="hc-img-ph" style="background-image: url('slide5.jpg');">
+            <div class="hc-caption">Carrying the Light of the Silsila</div>
+          </div>
+        </div>
+        </div><!-- /hero-carousel -->
+
+        <!-- Arrows -->
+        <button class="hc-arrow hc-prev" onclick="moveCarousel('heroCarousel',-1)" aria-label="Previous">&#8249;</button>
+        <button class="hc-arrow hc-next" onclick="moveCarousel('heroCarousel',1)"  aria-label="Next">&#8250;</button>
+
+        <!-- Dots -->
+        <div class="hc-dots" id="heroDots">
+          <span class="hc-dot active" onclick="goCarousel('heroCarousel',0)"></span>
+          <span class="hc-dot" onclick="goCarousel('heroCarousel',1)"></span>
+          <span class="hc-dot" onclick="goCarousel('heroCarousel',2)"></span>
+          <span class="hc-dot" onclick="goCarousel('heroCarousel',3)"></span>
+          <span class="hc-dot" onclick="goCarousel('heroCarousel',4)"></span>
+        </div>
+      </div><!-- /hero-carousel-wrap -->
+
+      <!-- RIGHT : Golden Words + Clock -->
+      <div class="hero-right-panel">
+
+        <!-- Golden Words Rotator -->
+        <div class="golden-words-panel">
+          <div class="gw-header">
+            <span class="gw-star">✦</span>
+            <h2 class="gw-title">Golden Words</h2>
+            <span class="gw-star">✦</span>
+          </div>
+          <div class="gw-rotator" id="gwRotator">
+            <div class="gw-quote active">
+              <p class="gw-arabic">قَلْبٌ سَلِيمٌ</p>
+              <p class="gw-text">"The heart is the mirror of God. Polish it with remembrance and it shall reflect the Divine Light."</p>
+              <span class="gw-attr">— Rabbani Peer</span>
+            </div>
+            <div class="gw-quote">
+              <p class="gw-arabic">مَنْ عَرَفَ نَفْسَهُ</p>
+              <p class="gw-text">"Whoever knows himself truly, knows his Lord. The journey within is the greatest journey of all."</p>
+              <span class="gw-attr">— Sufi Wisdom</span>
+            </div>
+            <div class="gw-quote">
+              <p class="gw-arabic">اَللهُ نُورُ السَّمٰوَاتِ</p>
+              <p class="gw-text">"Die before you die — and discover that there was never any death. The soul is eternal in its beloved."</p>
+              <span class="gw-attr">— Tasawwuf Teaching</span>
+            </div>
+            <div class="gw-quote">
+              <p class="gw-arabic">ذِكْرُ اللهِ</p>
+              <p class="gw-text">"Dhikr is not merely the movement of the tongue. It is the trembling of the heart in divine awe."</p>
+              <span class="gw-attr">— Rabbani Peer</span>
+            </div>
+            <div class="gw-quote">
+              <p class="gw-arabic">اَلْمَحَبَّةُ</p>
+              <p class="gw-text">"Love is the foundation of Sufism. When love enters the heart, nothing remains but the Beloved."</p>
+              <span class="gw-attr">— Sufi Wisdom</span>
+            </div>
+            <div class="gw-quote">
+              <p class="gw-arabic">صِدْقُ الطَّرِيق</p>
+              <p class="gw-text">"Walk the path with sincerity, for sincerity is the lamp that lights every step of the spiritual journey."</p>
+              <span class="gw-attr">— Khalifa Teaching</span>
+            </div>
+          </div>
+          <!-- Progress bar -->
+          <div class="gw-progress-bar"><div class="gw-progress-fill" id="gwProgressFill"></div></div>
+          <!-- Navigation dots -->
+          <div class="gw-dots" id="gwDots">
+            <span class="gw-dot active"></span>
+            <span class="gw-dot"></span>
+            <span class="gw-dot"></span>
+            <span class="gw-dot"></span>
+            <span class="gw-dot"></span>
+            <span class="gw-dot"></span>
+          </div>
+        </div><!-- /golden-words-panel -->
+
+        <!-- Real-Time Clock -->
+        <div class="home-clock-panel">
+          <div class="clock-english">
+            <div class="clock-time" id="clockTime">00:00:00</div>
+            <div class="clock-date" id="clockDateEn">—</div>
+          </div>
+          <div class="clock-divider">✦</div>
+          <div class="clock-islamic">
+            <div class="clock-hijri-label">Islamic Date</div>
+            <div class="clock-hijri" id="clockHijri">—</div>
+            <div class="clock-hijri-ar" id="clockHijriAr">—</div>
+          </div>
+        </div>
+
+      </div><!-- /hero-right-panel -->
+    </div><!-- /home-hero-section -->
+
+    <!-- ── SECTION 2 : BOOKS CAROUSEL ── -->
+    <div class="home-section books-section">
+      <div class="home-section-header">
+        <div class="hs-ornament">✦</div>
+        <h2 class="hs-title">Sacred E-Books</h2>
+        <p class="hs-sub">Download blessed Sufi literature in Urdu &amp; Hindi</p>
+      </div>
+      <div class="book-carousel-wrap">
+        <button class="bc-arrow bc-prev" onclick="shiftBooks(-1)" aria-label="Previous books">&#8249;</button>
+        <div class="book-track-outer">
+          <div class="book-track" id="bookTrack">
+
+            <!-- Book 1 -->
+
+            <div class="book-card">
+  <div class="book-cover">
+    <img src="font.jpg" alt="Nisab e Tasawwuf" style="width:100%; height:100%; object-fit:cover; display:block;">
+  </div>
+  <div class="book-info">
+    <h4>Nisab e Tasawwuf</h4>
+    <p class="bc-lang">Urdu</p>
+    <p>The Path of the Mystic — a comprehensive guide to spiritual purification.</p>
+    
+  </div>
+</div>
+
+      <!-- Guldasta e maroof -->
+
+ <div class="book-card">
+  <div class="book-cover">
+    <img src="guldastaemaroof.jpg" alt="Nisab e Tasawwuf" style="width:100%; height:100%; object-fit:cover; display:block;">
+  </div>
+  <div class="book-info">
+    <h4>Guldasta e Maroof</h4>
+    <p class="bc-lang">Urdu</p>
+    <p>The Path of the Mystic — a comprehensive guide to spiritual purification.</p>
+    
+  </div>
+</div>
+
+          <!-- Book 2 -->
+
+            <div class="book-card">
+  <div class="book-cover">
+    <img src="Tasawwure Shaikh.png" alt="دلِ آگاہ" style="width:100%; height:100%; object-fit:cover; display:block;">
+  </div>
+  <div class="book-info">
+    <h4>Tasawwur e Shaikh</h4>
+    <p class="bc-lang">Urdu</p>
+    <p>The Awakened Heart — teachings on experiencing divine presence.</p>
+    
+              </div>
+            </div>
+
+           <!-- Book 3 -->
+
+            <div class="book-card">
+  <div class="book-cover">
+    <img src="Peer Mureed ko khilafat.png" alt="نورِ ایمان" style="width:100%; height:100%; object-fit:cover; display:block;">
+  </div>
+  <div class="book-info">
+    <h4>Peer Mureed ko Khilafat</h4>
+    <p class="bc-lang">Urdu</p>
+    <p>The Light of Faith — discourses on strengthening faith through love.</p>
+    
+              </div>
+            </div>
+
+           <!-- Book 4 -->
+
+            <div class="book-card">
+  <div class="book-cover">
+    <img src="Rooh Kise Kehte hain.png" alt="معرفتِ الٰہی" style="width:100%; height:100%; object-fit:cover; display:block;">
+  </div>
+  <div class="book-info">
+    <h4>Rooh Kise Kehte Hain</h4>
+    <p class="bc-lang">Urdu</p>
+    <p>Divine Gnosis — an exploration of the highest station in Sufism.</p>
+    
+              </div>
+            </div>
+
+           <!-- Book 5 -->
+
+            <div class="book-card">
+  <div class="book-cover">
+    <img src="hindi_noorul_imaan.jpg" alt="आत्मज्ञान की राह" style="width:100%; height:100%; object-fit:cover; display:block;">
+  </div>
+  <div class="book-info">
+    <h4>नोरुल इमान</h4>
+    <p class="bc-lang">Hindi</p>
+    <p>The Path to Self-Knowledge through Sufi teachings.</p>
+    
+              </div>
+            </div>
+
+           <!-- Book 6 -->
+
+            <div class="book-card">
+  <div class="book-cover">
+    <img src="hindi_lo_ujale_laut_aaye.jpg" alt="दिव्य प्रेम का सागर" style="width:100%; height:100%; object-fit:cover; display:block;">
+  </div>
+  <div class="book-info">
+    <h4>लो उजले लौट आए</h4>
+    <p class="bc-lang">Hindi</p>
+    <p>Ocean of Divine Love — the mystical concept of love in Sufism.</p>
+    
+              </div>
+            </div>
+
+           <!-- Book 7 -->
+
+            <div class="book-card">
+  <div class="book-cover">
+    <img src="enlightment_in_life.jpg" alt="रूहानी सफर" style="width:100%; height:100%; object-fit:cover; display:block;">
+  </div>
+  <div class="book-info">
+    <h4>Enlightment in Life</h4>
+    <p class="bc-lang">English</p>
+    <p>The Spiritual Journey — a companion for the inward path.</p>
+    
+              </div>
+            </div>
+
+
+
+          </div><!-- /book-track -->
+        </div><!-- /book-track-outer -->
+        <button class="bc-arrow bc-next" onclick="shiftBooks(1)" aria-label="Next books">&#8250;</button>
+      </div>
+      <div style="text-align:center;margin-top:2rem;">
+        <button onclick="showPage('ebooks-urdu')" class="btn-outline">View All Books</button>
+      </div>
+    </div><!-- /books-section -->
+
+    <!-- ── SECTION 3 : VIDEO CAROUSEL ── -->
+    <div class="home-section video-section">
+      <div class="home-section-header">
+        <div class="hs-ornament">✦</div>
+        <h2 class="hs-title">Blessed Discourses</h2>
+        <p class="hs-sub">Watch spiritual lectures &amp; bayans on our YouTube channel</p>
+      </div>
+
+      <div class="vc-outer">
+        <button class="vc-arrow vc-prev" id="vcPrev" aria-label="Previous">&#8249;</button>
+
+        <div class="vc-window" id="vcWindow">
+          <div class="vc-track" id="vcTrack">
+
+            <!-- CARD 1 — replace VIDEO_ID_1 with real YouTube video ID -->
+            <div class="vc-card" onclick="openVidPopup('oT1vrvStLz0')">
+              <div class="vc-thumb">
+                <img src="https://img.youtube.com/vi/oT1vrvStLz0/hqdefault.jpg" alt="Video 1" />
+                <div class="vc-play"><span>▶</span></div>
+              </div>
+              <div class="vc-info"><p>Video Title 1</p></div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="vc-card" onclick="openVidPopup('ydhbw_LNmts')">
+              <div class="vc-thumb">
+                <img src="https://img.youtube.com/vi/ydhbw_LNmts/hqdefault.jpg" alt="" />
+                <div class="vc-play"><span>▶</span></div>
+              </div>
+              <div class="vc-info"><p>Video Title 2</p></div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="vc-card" onclick="openVidPopup('5qe4_L_Ngvw')">
+              <div class="vc-thumb">
+                <img src="https://img.youtube.com/vi/5qe4_L_Ngvw/hqdefault.jpg" alt="" />
+                <div class="vc-play"><span>▶</span></div>
+              </div>
+              <div class="vc-info"><p>Video Title 3</p></div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="vc-card" onclick="openVidPopup('R2s_AxVr4K8')">
+              <div class="vc-thumb">
+                <img src="https://img.youtube.com/vi/R2s_AxVr4K8/hqdefault.jpg" alt="" />
+                <div class="vc-play"><span>▶</span></div>
+              </div>
+              <div class="vc-info"><p>Video Title 4</p></div>
+            </div>
+
+            
+
+          </div><!-- /vc-track -->
+        </div><!-- /vc-window -->
+
+        <button class="vc-arrow vc-next" id="vcNext" aria-label="Next">&#8250;</button>
+      </div><!-- /vc-outer -->
+
+      <!-- dots -->
+      <div class="vc-dots" id="vcDots"></div>
+
+      <!-- POPUP PLAYER -->
+      <div class="vc-popup" id="vcPopup">
+        <div class="vc-popup-box">
+          <button class="vc-popup-close" id="vcClose">✕</button>
+          <div class="vc-popup-frame">
+            <iframe id="vcFrame" src="" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:2.5rem;">
+        <a href="https://www.youtube.com/@sufipeerrabbani" target="_blank" class="btn-primary">Visit YouTube Channel</a>
+      </div>
+    </div><!-- /video-section -->
+
+  </section><!-- /page-home -->
+
+  <!-- ABOUT US -->
+  <section id="page-about-us" class="page">
+    <div class="page-hero"><h2 class="page-hero-title">About Us</h2></div>
+    <div class="split-layout container">
+      <div class="split-img">
+        <div class="img-placeholder">
+          <div class="img-ph-inner">
+            <span class="img-ph-icon">🌙</span>
+            <p>Photo Placeholder</p>
+          </div>
+        </div>
+      </div>
+      <div class="split-text">
+        <h3 class="section-title">Our Spiritual Journey</h3>
+        <div class="ornament">✦ ✦ ✦</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+        <p>Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque.</p>
+        <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TASAWWUF -->
+  <section id="page-tasawwuf" class="page">
+    <div class="page-hero"><h2 class="page-hero-title">Tasawwuf</h2></div>
+    <div class="split-layout container">
+      <div class="split-img">
+        <div class="img-placeholder">
+          <div class="img-ph-inner">
+            <span class="img-ph-icon">☆</span>
+            <p>Photo Placeholder</p>
+          </div>
+        </div>
+      </div>
+      <div class="split-text">
+        <h3 class="section-title">The Inner Dimension of Islam</h3>
+        <div class="ornament">✦ ✦ ✦</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tasawwuf, also known as Islamic mysticism or Sufism, is the inner, mystical dimension of Islam. A practitioner of this tradition is generally known as a Sufi.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+        <p>Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOLDEN WORDS -->
+  <section id="page-golden-words" class="page">
+    <div class="page-hero"><h2 class="page-hero-title">Golden Words</h2></div>
+    <div class="split-layout container">
+      <div class="split-img">
+        <div class="img-placeholder">
+          <div class="img-ph-inner">
+            <span class="img-ph-icon">✦</span>
+            <p>Photo Placeholder</p>
+          </div>
+        </div>
+      </div>
+      <div class="split-text">
+        <h3 class="section-title">Timeless Wisdom of the Masters</h3>
+        <div class="ornament">✦ ✦ ✦</div>
+        <blockquote class="golden-quote">"The heart is the mirror of God. Polish it with remembrance."</blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+        <blockquote class="golden-quote">"Whoever knows himself knows his Lord."</blockquote>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <blockquote class="golden-quote">"Die before you die, and find that there is no death."</blockquote>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.</p>
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est qui dolorem ipsum.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- KHALIFAS -->
+  <section id="page-khalifas" class="page">
+    <div class="page-hero"><h2 class="page-hero-title">Khalifas</h2></div>
+    <div class="container">
+      <p class="page-intro">The appointed successors (Khalifas) who carry the blessed light of the silsila, continuing the sacred chain of spiritual transmission.</p>
+
+      <div class="khalifa-entry split-layout">
+        <div class="split-img">
+          <div class="img-placeholder"><div class="img-ph-inner"><span class="img-ph-icon">⚘</span><p>Khalifa Photo</p></div></div>
+        </div>
+        <div class="split-text">
+          <div class="khalifa-number">1</div>
+          <h3 class="khalifa-name">Sheikh Abdul Kareem</h3>
+          <div class="ornament">✦ ✦ ✦</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.</p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+
+      <div class="khalifa-entry split-layout">
+        <div class="split-img">
+          <div class="img-placeholder"><div class="img-ph-inner"><span class="img-ph-icon">⚘</span><p>Khalifa Photo</p></div></div>
+        </div>
+        <div class="split-text">
+          <div class="khalifa-number">2</div>
+          <h3 class="khalifa-name">Sheikh Muhammad Yusuf</h3>
+          <div class="ornament">✦ ✦ ✦</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+
+      <div class="khalifa-entry split-layout">
+        <div class="split-img">
+          <div class="img-placeholder"><div class="img-ph-inner"><span class="img-ph-icon">⚘</span><p>Khalifa Photo</p></div></div>
+        </div>
+        <div class="split-text">
+          <div class="khalifa-number">3</div>
+          <h3 class="khalifa-name">Sheikh Hafiz Ibrahim</h3>
+          <div class="ornament">✦ ✦ ✦</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DAWAT E FIKR -->
+  <section id="page-dawat-e-fikr" class="page">
+    <div class="page-hero"><h2 class="page-hero-title">Dawat e Fikr</h2></div>
+    <div class="split-layout container">
+      <div class="split-img">
+        <div class="img-placeholder">
+          <div class="img-ph-inner"><span class="img-ph-icon">🌿</span><p>Photo Placeholder</p></div>
+        </div>
+      </div>
+      <div class="split-text">
+        <h3 class="section-title">An Invitation to Contemplate</h3>
+        <div class="ornament">✦ ✦ ✦</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum.</p>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+        <p>Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BAIT -->
+  <section id="page-bait" class="page">
+    <div class="page-hero"><h2 class="page-hero-title">Bait</h2></div>
+    <div class="container bait-container">
+      <div class="bait-image-wrap">
+        <div class="img-placeholder bait-img">
+          <div class="img-ph-inner">
+            <span class="img-ph-icon">🤲</span>
+            <p>Bait Ceremony Image</p>
+          </div>
+        </div>
+      </div>
+      <div class="bait-cta-row">
+        <a href="#" class="btn-primary bait-btn">Request for Bait</a>
+        <a href="#" class="btn-outline bait-btn">Contact Sheikh</a>
+        <a href="#" class="btn-gold bait-btn">Learn About Bait</a>
+      </div>
+      <div class="bait-text">
+        <h3 class="section-title" style="text-align:center;">The Sacred Pledge</h3>
+        <div class="ornament" style="text-align:center;">✦ ✦ ✦</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis.</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DO YOU KNOW -->
+  <section id="page-do-you-know" class="page">
+    <div class="page-hero"><h2 class="page-hero-title">Do You Know</h2></div>
+    <div class="split-layout container">
+      <div class="split-img">
+        <div class="img-placeholder">
+          <div class="img-ph-inner"><span class="img-ph-icon">❓</span><p>Photo Placeholder</p></div>
+        </div>
+      </div>
+      <div class="split-text">
+        <h3 class="section-title">Spiritual Q &amp; A</h3>
+        <div class="ornament">✦ ✦ ✦</div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              <span>What is Tasawwuf and why is it important?</span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-a">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              <span>What is the meaning of Bait in Sufism?</span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-a">
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              <span>Who are the Khalifas and what is their role?</span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-a">
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              <span>What is the difference between Qadariya and Chistiya?</span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-a">
+              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              <span>How does one begin the journey of Sufism?</span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-a">
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              <span>What is Dhikr and how is it practiced?</span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-a">
+              <p>Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTOS - FEHMI -->
+  <section id="page-photos-fehmi" class="page">
+    <div class="page-hero"><h2 class="page-hero-title">Fehmi Peer</h2></div>
+    <div class="container">
+      <p class="page-intro">A blessed collection of photographs of Hazrat Fehmi Peer.</p>
+      <div class="photo-gallery">
+        <div class="gallery-item"><div class="gallery-ph"><span>🌙</span></div></div>
+        <div class="gallery-item"><div class="gallery-ph"><span>🌙</span></div></div>
+        <div class="gallery-item"><div class="gallery-ph"><span>🌙</span></div></div>
+        <div class="gallery-item"><div class="gallery-ph"><span>🌙</span></div></div>
+        <div class="gallery-item"><div class="gallery-ph"><span>🌙</span></div></div>
+        <div class="gallery-item"><div class="gallery-ph"><span>🌙</span></div></div>
+        <div class="gallery-item"><div class="gallery-ph"><span>🌙</span></div></div>
+        <div class="gallery-item"><div class="gallery-ph"><span>🌙</span></div></div>
+        <div class="gallery-item"><div class="gallery-ph"><span>🌙</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTOS - MAROOF -->
+  <section id="page-photos-maroof" class="page">
+    <div class="page-hero"><h2 class="page-hero-title">Maroof Peer</h2></div>
+    <div class="container">
+      <p class="page-intro">A blessed collection of photographs of Hazrat Maroof Peer.</p>
+      <div class="photo-gallery">
+        <div class="gallery-item"><div class="gallery-ph"><span>☆</span></div></div>
+        <div class="gallery-item"><div class="gallery-ph"><span>☆</span></div></div>
+        <div class="gallery-item"><div class="gallery-ph"><span>☆</span></div></div>
+        <div class="gallery-item"><div class="gallery-ph"><span>☆</span></div></div>
+        <div class="gallery-item"><div class="gallery-ph"><span>☆</span></div></div>
+        <div class="gallery-item"><div class="gallery-ph"><span>☆</span></div></div>
+        <div class="gallery-item"><div class="gallery-ph"><span>☆</span></div></div>
+        <div class="gallery-item"><div class="gallery-ph"><span>☆</span></div></div>
+        <div class="gallery-item"><div class="gallery-ph"><span>☆</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTOS - RABBANI -->
+  <section id="page-photos-rabbani" class="page">
+    <div class="page-hero"><h2 class="page-hero-title">Rabbani Peer</h2></div>
+    <div class="container">
+      <p class="page-intro">A blessed collection of photographs of Hazrat Rabbani Peer.</p>
+      <div class="photo-gallery">
+        <div class="gallery-item"><div class="gallery-ph"><span>✦</span></div></div>
+        <div class="gallery-item"><div class="gallery-ph"><span>✦</span></div></div>
+        <div class="gallery-item"><div class="gallery-ph"><span>✦</span></div></div>
+        <div class="gallery-item"><div class="gallery-ph"><span>✦</span></div></div>
+        <div class="gallery-item"><div class="gallery-ph"><span>✦</span></div></div>
+        <div class="gallery-item"><div class="gallery-ph"><span>✦</span></div></div>
+        <div class="gallery-item"><div class="gallery-ph"><span>✦</span></div></div>
+        <div class="gallery-item"><div class="gallery-ph"><span>✦</span></div></div>
+        <div class="gallery-item"><div class="gallery-ph"><span>✦</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section id="page-video" class="page">
+    <div class="page-hero"><h2 class="page-hero-title">Video</h2></div>
+    <div class="container">
+      <p class="page-intro">Watch the blessed lectures, bayans, and spiritual discourses of Rabbani Peer on YouTube.</p>
+      <div class="video-grid">
+        <div class="video-card">
+          <div class="video-thumb">
+            <div class="yt-placeholder"><span class="yt-icon">▶</span></div>
+          </div>
+          <div class="video-info">
+            <h4>Bayan – The Essence of Love in Sufism</h4>
+            <p>A profound discourse on divine love and its role in the spiritual path.</p>
+            <a href="https://www.youtube.com/@RabbaniPeer" target="_blank" class="btn-sm">Watch on YouTube</a>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="video-thumb">
+            <div class="yt-placeholder"><span class="yt-icon">▶</span></div>
+          </div>
+          <div class="video-info">
+            <h4>Silsila – The Chain of Spiritual Succession</h4>
+            <p>Understanding the lineage of the blessed Sufi order.</p>
+            <a href="https://www.youtube.com/@RabbaniPeer" target="_blank" class="btn-sm">Watch on YouTube</a>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="video-thumb">
+            <div class="yt-placeholder"><span class="yt-icon">▶</span></div>
+          </div>
+          <div class="video-info">
+            <h4>Dhikr – The Practice of Remembrance</h4>
+            <p>How to purify the heart through constant remembrance of Allah.</p>
+            <a href="https://www.youtube.com/@RabbaniPeer" target="_blank" class="btn-sm">Watch on YouTube</a>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="video-thumb">
+            <div class="yt-placeholder"><span class="yt-icon">▶</span></div>
+          </div>
+          <div class="video-info">
+            <h4>Muraqaba – Sufi Meditation Explained</h4>
+            <p>An introduction to the spiritual practice of deep contemplation.</p>
+            <a href="https://www.youtube.com/@RabbaniPeer" target="_blank" class="btn-sm">Watch on YouTube</a>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="video-thumb">
+            <div class="yt-placeholder"><span class="yt-icon">▶</span></div>
+          </div>
+          <div class="video-info">
+            <h4>Fana – Annihilation of the Self</h4>
+            <p>The mystical concept of dissolving the ego in divine love.</p>
+            <a href="https://www.youtube.com/@RabbaniPeer" target="_blank" class="btn-sm">Watch on YouTube</a>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="video-thumb">
+            <div class="yt-placeholder"><span class="yt-icon">▶</span></div>
+          </div>
+          <div class="video-info">
+            <h4>Tawbah – The Door of Repentance</h4>
+            <p>Returning to Allah with sincerity and a purified heart.</p>
+            <a href="https://www.youtube.com/@RabbaniPeer" target="_blank" class="btn-sm">Watch on YouTube</a>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem;">
+        <a href="https://www.youtube.com/@RabbaniPeer" target="_blank" class="btn-primary">Visit Our YouTube Channel</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EBOOKS URDU -->
+  <section id="page-ebooks-urdu" class="page">
+    <div class="page-hero"><h2 class="page-hero-title">E-Books – Urdu</h2></div>
+    <div class="container">
+      <p class="page-intro">Download our collection of blessed Sufi literature in Urdu.</p>
+      <div class="ebook-list">
+        <div class="ebook-item">
+          <div class="ebook-cover"><div class="ebook-ph">📖</div></div>
+          <div class="ebook-info">
+            <h4>راہِ سلوک</h4>
+            <p class="ebook-sub">Rah-e-Sulook – The Path of the Mystic</p>
+            <p class="ebook-desc">A comprehensive guide to the Sufi path, covering the stages of spiritual purification and ascension.</p>
+            <a href="#" class="btn-download">⬇ Download PDF</a>
+          </div>
+        </div>
+        <div class="ebook-item">
+          <div class="ebook-cover"><div class="ebook-ph">📖</div></div>
+          <div class="ebook-info">
+            <h4>دلِ آگاہ</h4>
+            <p class="ebook-sub">Dil-e-Agah – The Awakened Heart</p>
+            <p class="ebook-desc">Teachings on awakening the inner consciousness and experiencing the divine presence in everyday life.</p>
+            <a href="#" class="btn-download">⬇ Download PDF</a>
+          </div>
+        </div>
+        <div class="ebook-item">
+          <div class="ebook-cover"><div class="ebook-ph">📖</div></div>
+          <div class="ebook-info">
+            <h4>نورِ ایمان</h4>
+            <p class="ebook-sub">Noor-e-Iman – The Light of Faith</p>
+            <p class="ebook-desc">Spiritual discourses on strengthening faith through love, contemplation, and righteous conduct.</p>
+            <a href="#" class="btn-download">⬇ Download PDF</a>
+          </div>
+        </div>
+        <div class="ebook-item">
+          <div class="ebook-cover"><div class="ebook-ph">📖</div></div>
+          <div class="ebook-info">
+            <h4>معرفتِ الٰہی</h4>
+            <p class="ebook-sub">Marifat-e-Ilahi – Divine Gnosis</p>
+            <p class="ebook-desc">An exploration of the highest station in Sufism — knowing Allah through the purified heart.</p>
+            <a href="#" class="btn-download">⬇ Download PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EBOOKS HINDI -->
+  <section id="page-ebooks-hindi" class="page">
+    <div class="page-hero"><h2 class="page-hero-title">E-Books – Hindi</h2></div>
+    <div class="container">
+      <p class="page-intro">Download our collection of blessed Sufi literature in Hindi.</p>
+      <div class="ebook-list">
+        <div class="ebook-item">
+          <div class="ebook-cover"><div class="ebook-ph">📚</div></div>
+          <div class="ebook-info">
+            <h4>आत्मज्ञान की राह</h4>
+            <p class="ebook-sub">Aatmagyan ki Raah – The Path to Self-Knowledge</p>
+            <p class="ebook-desc">A guide to understanding the self through Sufi teachings and Islamic mysticism.</p>
+            <a href="#" class="btn-download">⬇ Download PDF</a>
+          </div>
+        </div>
+        <div class="ebook-item">
+          <div class="ebook-cover"><div class="ebook-ph">📚</div></div>
+          <div class="ebook-info">
+            <h4>दिव्य प्रेम का सागर</h4>
+            <p class="ebook-sub">Divya Prem ka Sagar – Ocean of Divine Love</p>
+            <p class="ebook-desc">Exploring the mystical concept of love in Sufism and how it transforms the human heart.</p>
+            <a href="#" class="btn-download">⬇ Download PDF</a>
+          </div>
+        </div>
+        <div class="ebook-item">
+          <div class="ebook-cover"><div class="ebook-ph">📚</div></div>
+          <div class="ebook-info">
+            <h4>रूहानी सफर</h4>
+            <p class="ebook-sub">Roohani Safar – The Spiritual Journey</p>
+            <p class="ebook-desc">A step-by-step companion for those embarking on the inward journey toward divine proximity.</p>
+            <a href="#" class="btn-download">⬇ Download PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHAJRA QADARIYA -->
+  <section id="page-shajra-qadariya" class="page">
+    <div class="page-hero"><h2 class="page-hero-title">Shajra – Qadariya</h2></div>
+    <div class="split-layout container">
+      <div class="split-img">
+        <div class="img-placeholder">
+          <div class="img-ph-inner"><span class="img-ph-icon">🌳</span><p>Shajra Image</p></div>
+        </div>
+      </div>
+      <div class="split-text">
+        <h3 class="section-title">The Qadariya Silsila</h3>
+        <div class="ornament">✦ ✦ ✦</div>
+        <p>The Qadariyya is one of the oldest and most widespread Sufi orders, tracing its origin back to the great Sheikh Abdul Qadir Gilani (may Allah sanctify his secret), the Sultan of Awliya.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est qui dolorem ipsum.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHAJRA CHISTIYA -->
+  <section id="page-shajra-chistiya" class="page">
+    <div class="page-hero"><h2 class="page-hero-title">Shajra – Chistiya</h2></div>
+    <div class="split-layout container">
+      <div class="split-img">
+        <div class="img-placeholder">
+          <div class="img-ph-inner"><span class="img-ph-icon">🌳</span><p>Shajra Image</p></div>
+        </div>
+      </div>
+      <div class="split-text">
+        <h3 class="section-title">The Chistiya Silsila</h3>
+        <div class="ornament">✦ ✦ ✦</div>
+        <p>The Chishtiyya order is known for its emphasis on love, tolerance, and openness toward all. Founded by Khwaja Abu Ishaq Shami Chishti, the order flourished in the Indian subcontinent through the blessed mission of Khwaja Moinuddin Chishti of Ajmer.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="page-contact" class="page">
+    <div class="page-hero"><h2 class="page-hero-title">Contact Us</h2></div>
+    <div class="container contact-container">
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14889.534!2d72.7!3d19.97!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDU4JzEyLjAiTiA3MsKwNDInMDAuMCJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+          width="100%" height="400" style="border:0;border-radius:1rem;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+      <div class="contact-form-wrap">
+        <h3 class="section-title">Send a Message</h3>
+        <div class="ornament">✦ ✦ ✦</div>
+        <form class="contact-form" onsubmit="handleContact(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="Enter your email" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" placeholder="Message subject" />
+          </div>
+          <div class="form-group">
+            <label>Your Message</label>
+            <textarea rows="5" placeholder="Write your message here..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+      </div>
+      <div class="social-bar">
+        <a href="https://wa.me/91XXXXXXXXXX" class="social-link whatsapp" target="_blank">
+          <span class="social-icon">💬</span>
+          <div><strong>WhatsApp</strong><span>+91 XXXXX XXXXX</span></div>
+        </a>
+        <a href="https://instagram.com/rabbaniPeer" class="social-link instagram" target="_blank">
+          <span class="social-icon">📸</span>
+          <div><strong>Instagram</strong><span>@RabbaniPeer</span></div>
+        </a>
+        <a href="https://facebook.com/rabbaniPeer" class="social-link facebook" target="_blank">
+          <span class="social-icon">👥</span>
+          <div><strong>Facebook</strong><span>/RabbaniPeer</span></div>
+        </a>
+        <a href="https://youtube.com/@RabbaniPeer" class="social-link youtube" target="_blank">
+          <span class="social-icon">▶</span>
+          <div><strong>YouTube</strong><span>@RabbaniPeer</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer id="site-footer">
+  <div class="footer-inner container">
+    <div class="footer-logo">
+      <div class="logo-emblem footer-emblem">☽</div>
+      <span class="logo-title">Rabbani Peer</span>
+    </div>
+    <p class="footer-quote">"May Allah bless every soul that walks in His remembrance."</p>
+    <div class="footer-links">
+      <a href="#" onclick="showPage('about-us')">About Us</a>
+      <a href="#" onclick="showPage('khalifas')">Khalifas</a>
+      <a href="#" onclick="showPage('bait')">Bait</a>
+      <a href="#" onclick="showPage('contact')">Contact</a>
+    </div>
+    <p class="footer-copy">© 2024 Rabbani Peer. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
